@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Exo_2, Roboto_Mono } from "next/font/google"; // Importa las fuentes
 import "./globals.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar";
 import Footer from "./components/Footer";
 
 // Configuración de fuentes de Google
