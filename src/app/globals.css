@@ -1,26 +1,112 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0D1117; 
+  color: #E0E0E0;
+  font-family: theme('fontFamily.sans'); 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Estilos para la barra de scroll (opcional, pero contribuye al look) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #161B22;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #3B82F6;
+  border-radius: 4px;
+  border: 2px solid #161B22;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #60A5FA;
+}
+
+/* Clases personalizadas de utilidad (si las anteriores en @layer no se toman directamente) */
+.section-title {
+  font-size: 2.25rem; /* 36px */
+  line-height: 2.5rem; /* 40px */
+  /* md:text-4xl */
+  font-weight: 700;
+  color: #00E5FF;
+  margin-bottom: 2rem; /* mb-8 */
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 3rem; /* 48px */
+    line-height: 1;
+  }
+}
+
+.section-subtitle {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+  /* md:text-xl */
+  color: #A0A0A0;
+  margin-bottom: 3rem; /* mb-12 */
+  text-align: center;
+  max-width: 42rem; /* max-w-2xl */
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .section-subtitle {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+  }
+}
+
+
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  padding-top: 0.75rem;    /* py-3 */
+  padding-bottom: 0.75rem; /* py-3 */
+  padding-left: 2rem;     /* px-8 */
+  padding-right: 2rem;    /* px-8 */
+  border-radius: 0.5rem; /* rounded-lg */
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.btn-primary {
+  @apply btn;
+  background-color: #3B82F6;
+  color: white;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* shadow-md */
+}
+.btn-primary:hover {
+  background-color: #60A5FA;
+  box-shadow: 0 0 15px 5px rgba(59, 130, 246, 0.4);
+}
+
+.btn-secondary {
+  @apply btn;
+  border: 1px solid #3B82F6;
+  color: #3B82F6;
+}
+.btn-secondary:hover {
+  background-color: #3B82F6;
+  color: white;
+}
+
+/* Animaciones de entrada (ejemplo simple, puedes usar Intersection Observer para activarlas) */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
