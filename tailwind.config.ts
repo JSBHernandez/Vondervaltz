@@ -26,6 +26,7 @@ const config: Config = {
         'subtle-pulse': 'subtlePulse 2s infinite ease-in-out',
         'slide-in-left': 'slideInLeft 0.5s ease-out forwards',
         'slide-in-right': 'slideInRight 0.5s ease-out forwards',
+        'subtle-float': 'subtleFloat 3s infinite ease-in-out alternate',
       },
       keyframes: {
         fadeInUp: {
@@ -44,16 +45,27 @@ const config: Config = {
           '0%': { transform: 'translateX(100%)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1' },
         },
+        subtleFloat: { // NUEVOS KEYFRAMES
+          '0%': { transform: 'translateY(0px) rotateX(60deg) rotateZ(var(--initial-z-rot, 0deg))', opacity: '0.6' },
+          '50%': { opacity: '0.8' },
+          '100%': { transform: 'translateY(-20px) rotateX(60deg) rotateZ(calc(var(--initial-z-rot, 0deg) + 5deg))', opacity: '0.6' },
+        },
+        
       },
       boxShadow: {
         'glow-blue': '0 0 15px 5px rgba(59, 130, 246, 0.4)', // Sombra de resplandor azul
         'glow-accent': '0 0 15px 5px rgba(0, 229, 255, 0.4)',
       },
       backgroundImage: {
-        'gradient-futuristic': 'linear-gradient(135deg, #0D1117 0%, #161B22 50%, #001D3D 100%)', // Gradiente sutil
+        'gradient-futuristic': 'linear-gradient(135deg, #0D1117 0%, #161B22 50%, #001D3D 100%)',
+        // NUEVO: Resplandor azulado sutil para el fondo del hero
+        'hero-glow-background': 'radial-gradient(ellipse at 50% 50%, rgba(29, 78, 216, 0.10) 0%, rgba(13, 17, 23, 0) 70%)',
+        // NUEVO: Para los objetos flotantes (ejemplo)
+        'object-gradient': 'linear-gradient(145deg, theme("colors.brand-blue-light / 70%"), theme("colors.brand-blue / 90%"))',
       },
     },
   },
+
   plugins: [
 
   ],

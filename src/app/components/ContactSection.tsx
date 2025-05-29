@@ -17,8 +17,8 @@ const LinkedinIcon = () => (
 
 
 const socialLinks: SocialLink[] = [
-  { name: 'GitHub', icon: <GithubIcon />, url: 'https://github.com/yourusername' }, // Reemplaza con tu URL
-  { name: 'LinkedIn', icon: <LinkedinIcon />, url: 'https://linkedin.com/in/yourprofile' }, // Reemplaza con tu URL
+  { name: 'GitHub', icon: <GithubIcon />, url: 'https://github.com/JSBHernandez' }, // Reemplaza con tu URL
+  { name: 'LinkedIn', icon: <LinkedinIcon />, url: 'https://www.linkedin.com/in/juan-sebastian-becerra-hernandez-116752250/' }, // Reemplaza con tu URL
   // Agrega más redes si es necesario
 ];
 

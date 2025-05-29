@@ -42,8 +42,12 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="text-3xl font-bold text-brand-accent hover:opacity-80 transition-opacity">
-            Vondervaltz
+          <Link href="/" className="flex items-center h-12">
+          <img
+          src="/vlogo.png"
+          alt="Vondervaltz Logo"
+          className="h-18 w-auto object-contain"
+          />
           </Link>
 
           {/* Navegación Desktop */}

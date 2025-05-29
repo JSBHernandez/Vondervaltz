@@ -7,8 +7,8 @@ const LinkedinIconMini = () => ( /* ... SVG ... */ <svg fill="currentColor" view
 
 
 const footerSocialLinks: SocialLink[] = [
-  { name: 'GitHub', icon: <GithubIconMini />, url: 'https://github.com/yourusername' },
-  { name: 'LinkedIn', icon: <LinkedinIconMini />, url: 'https://linkedin.com/in/yourprofile' },
+  { name: 'GitHub', icon: <GithubIconMini />, url: 'https://github.com/JSBHernandez' },
+  { name: 'LinkedIn', icon: <LinkedinIconMini />, url: 'https://www.linkedin.com/in/juan-sebastian-becerra-hernandez-116752250/' },
 ];
 
 const Footer: React.FC = () => {
