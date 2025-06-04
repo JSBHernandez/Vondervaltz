@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
 
           {/* Columna 3: Redes Sociales */}
           <div className="text-center md:text-right">
-            <h3 className="text-lg font-semibold text-brand-blue-light mb-3">Síguenos</h3>
+            <h3 className="text-lg font-semibold text-brand-blue-light mb-3">Sígueme</h3>
             <div className="flex justify-center md:justify-end space-x-4">
               {footerSocialLinks.map((link) => (
                 <a

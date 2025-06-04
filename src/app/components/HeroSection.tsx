@@ -1,13 +1,9 @@
-// src/app/components/HeroSection.tsx
 import Link from "next/link";
-import Image from "next/image"; // Asegúrate de que Image esté importado
-
-// Ya no necesitamos FloatingShape, así que puedes eliminar su definición
-// o comentarla si la quieres guardar para el futuro.
+import Image from "next/image"; 
 
 const HeroSection: React.FC = () => {
   // Define la ruta a tu imagen principal para el Hero
-  const heroImagePath = "/abstract31g.png"; // CAMBIA ESTO por la ruta a tu imagen
+  const heroImagePath = "/abstract31g.png"; 
 
   return (
     <section
@@ -53,7 +49,7 @@ const HeroSection: React.FC = () => {
         </div>
       </div>
 
-      {/* Flecha para scroll down (opcional, si la quieres mantener) */}
+      {/* Flecha para scroll down */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce z-20">
         <Link href="#services" aria-label="Ir a servicios">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-brand-blue-light hover:text-brand-accent transition-colors">

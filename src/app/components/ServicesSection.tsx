@@ -14,21 +14,21 @@ const PlaceholderIcon = () => (
 const servicesData: ServiceItem[] = [
   {
     id: 'web',
-    icon: 'code', // Reemplazar con SVG real o clase de ícono
+    icon: 'code', 
     title: 'Desarrollo Web Avanzado',
-    description: 'Aplicaciones web modernas, rápidas y escalables con las últimas tecnologías (Next.js, React, Node.js).',
+    description: 'Aplicaciones web modernas, rápidas y escalables con las últimas tecnologías y frameworks (Next.js, React, Node.js).',
   },
   {
     id: 'mobile',
     icon: 'mobile',
     title: 'Aplicaciones Móviles Nativas e Híbridas',
-    description: 'Experiencias móviles fluidas y de alto rendimiento para iOS y Android.',
+    description: 'Experiencias móviles fluidas y de alto rendimiento Android y WebView.',
   },
   {
     id: 'uiux',
     icon: 'design',
     title: 'Diseño UI/UX Futurista',
-    description: 'Interfaces intuitivas y atractivas con un enfoque en la experiencia del usuario y las tendencias de diseño del mañana.',
+    description: 'Interfaces atractivas con un enfoque en la experiencia del usuario, tendencias mas allá de lo común y 100% personalizadas.',
   },
   {
     id: 'ai',
@@ -87,7 +87,7 @@ const ServicesSection: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="section-title">Nuestros Servicios</h2>
         <p className="section-subtitle">
-          Transformamos ideas en realidad digital con un enfoque en la excelencia y la innovación.
+          Transformamos ideas en realidad digital con tu propio enfoque personalizado e identidad de marca.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-12">
           {servicesData.map((service, index) => (

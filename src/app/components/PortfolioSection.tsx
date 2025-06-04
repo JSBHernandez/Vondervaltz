@@ -115,7 +115,7 @@ const PortfolioSection: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="section-title">Nuestro Trabajo</h2>
         <p className="section-subtitle">
-          Proyectos que demuestran nuestra pasión por la tecnología y el diseño de vanguardia.
+          Proyectos que demuestran nuestra pasión por la tecnología y el diseño de vanguardia. ¿Quieres estar aquí? Contáctanos.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-12">
           {portfolioData.map((project, index) => (
